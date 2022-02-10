@@ -10,7 +10,11 @@ int check(int got, int expected){
     return 0;
 }
 
+int summa(int a, int b){
+    return a + b;
+}
+
 int main(){
-    int result = check(2 + 2, 5);
+    int result = check(summa(2, 2), 4);
     return result;
 }
